@@ -1,6 +1,6 @@
 # Veridian CRM
 
-A responsive and accessible customer management dashboard built for the Veridian Financial frontend engineering assessment.
+A responsive and accessible customer management dashboard built for the Peerless frontend engineering assessment.
 
 The application implements Case 1, the **Customer Management Dashboard**, and allows users to view, search, filter, and register customers through a focused customer-management journey.
 
@@ -9,7 +9,7 @@ The application implements Case 1, the **Customer Management Dashboard**, and al
 * Customer dashboard with portfolio metrics
 * Searchable, filterable, and paginated customer table
 * Customer registration with React Hook Form and Zod validation
-* Pending status as the default registration status
+* Pending status preselected by default, with the option to choose Active or Inactive
 * Phone-number character and length validation
 * Duplicate submission protection
 * Status-aware registration success dialog
@@ -167,7 +167,7 @@ The registration form collects:
 * Phone number
 * Account status
 
-New registrations default to **Pending**, reflecting an account that still requires onboarding. React Hook Form manages form state and submission, while Zod centralizes validation and the accepted customer-domain values.
+New registrations default to **Pending**, reflecting an account that still requires onboarding, but users can select **Active** or **Inactive** when appropriate. React Hook Form manages form state and submission, while Zod centralizes validation and the accepted customer-domain values.
 
 During submission, the submit button is disabled, its text changes to `Registering...`, and `aria-busy` communicates progress to assistive technologies. This prevents rapid repeat submissions through the interface.
 
