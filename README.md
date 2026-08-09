@@ -88,6 +88,7 @@ pnpm lint
 The tests use Vitest and React Testing Library and focus on observable user-facing behavior. Current coverage includes:
 
 * Customer schema and phone-number validation
+* Preventing repeat submission while customer creation is in progress
 * Search and combined customer filtering
 * Pagination behavior
 * Filter control updates and page resets
